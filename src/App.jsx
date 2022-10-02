@@ -1,6 +1,7 @@
 import Header from "./components/header";
 
 import bgVideo from "./assets/videos/home.mp4";
+import fullImage from "./assets/images/360-preview.webp";
 
 import "./App.scss";
 
@@ -85,6 +86,10 @@ const App = () => {
               Lorem ipsum dolor sit.
             </a>
           </div>
+        </section>
+        <section className="preview">
+          <img src={fullImage} alt="360 preview" />
+          <button className="btn-white rounded">Take a look around</button>
         </section>
       </main>
       <footer></footer>
