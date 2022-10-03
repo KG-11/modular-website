@@ -3,6 +3,7 @@
 html {
   font-size: $font-sm;
   scroll-behavior: smooth;
+  transition-delay: 1s !important;
   body {
     font-family: $PlusJakartaSansRegular;
     overflow-x: hidden;
@@ -179,6 +180,7 @@ section.preview {
   }
   button.btn-white {
     border: none;
+    font-family: $PlusJakartaSansLight;
     background-color: $cultured;
     color: $eerie-black;
     font-size: $font-lg;
@@ -193,6 +195,66 @@ section.preview {
       scale: 1.05;
       text-decoration: underline;
       transition: all 250ms ease-in;
+    }
+  }
+}
+
+section.category-two {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+  .category-heading-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 4rem;
+    flex-wrap: wrap;
+  }
+  article {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4rem;
+    gap: 1rem;
+    .left {
+      display: flex;
+      flex-direction: column;
+      min-width: min(25rem, 90vw);
+      width: 45vw;
+      margin: 1rem 0;
+      .heading {
+        font-family: $PlusJakartaSansBold;
+        font-size: $font-lg;
+        color: $eerie-black;
+      }
+      .description {
+        font-family: $PlusJakartaSansSemiBold;
+        font-size: $font-md;
+        color: $eerie-black;
+      }
+      .link {
+        font-family: $PlusJakartaSansBold;
+        font-size: $font-md;
+        color: $eerie-black;
+      }
+      @media screen and (max-width: 991px) {
+        width: 100%;
+      }
+    }
+    .right {
+      min-width: min(25rem, 90vw);
+      img {
+        width: 40vw;
+        height: 20rem;
+        object-fit: cover;
+        height: 90vh;
+        border-radius: 0.25rem;
+        margin: 1rem 0;
+        @media screen and (max-width: 991px) {
+          width: 100%;
+        }
+      }
     }
   }
 }

@@ -91,6 +91,35 @@ const App = () => {
           <img src={fullImage} alt="360 preview" />
           <button className="btn-white rounded">Take a look around</button>
         </section>
+        <section className="category-two">
+          <div className="category-heading-row">
+            <p>No.1</p>
+            <p>Lorem, ipsum dolor.</p>
+            <p>Lorem, ipsum dolor.</p>
+          </div>
+          <article>
+            <div className="left">
+              <h3 className="heading">Lorem ipsum dolor sit.</h3>
+              <p className="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Debitis, sed distinctio dicta labore laudantium incidunt
+                accusamus aperiam et libero consectetur temporibus.
+              </p>
+              <h3 className="heading">Lorem ipsum dolor sit.</h3>
+              <p className="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Debitis, sed distinctio dicta labore laudantium incidunt
+                accusamus aperiam et libero consectetur.
+              </p>
+              <p className="info">Lorem, ipsum dolor.</p>
+              <a className="link">Lorem ipsum dolor</a>
+              <a className="link">Lorem ipsum dolor sit.</a>
+            </div>
+            <div className="right">
+              <img src={fullImage} alt="" />
+            </div>
+          </article>
+        </section>
       </main>
       <footer></footer>
     </>
