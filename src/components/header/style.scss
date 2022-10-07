@@ -11,11 +11,12 @@ header {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    font-size: $font-md;
+    font-size: $font-xl;
     padding: 0 2rem;
-    h2.nav-brand {
+    h1.nav-brand {
       font-size: $font-lg;
       margin-left: 2rem;
+      letter-spacing: 8px;
     }
     ul.nav-list {
       width: 100%;
