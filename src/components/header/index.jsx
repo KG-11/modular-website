@@ -1,5 +1,8 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 import { RiCloseCircleFill, RiMenu4Fill } from "react-icons/ri";
+
 import useWindowSize from "../../hooks/useWindowSize";
 
 import "./style.scss";
@@ -7,14 +10,19 @@ import "./style.scss";
 const Header = () => {
   const { width } = useWindowSize();
   const [showMenu, toggleMenu] = useState(false);
+  const navigate = useNavigate();
+
   return (
     <header>
       <nav className="nav">
-        <h1 className="nav-brand">Modular</h1>
+        <h1 className="nav-brand" onClick={() => navigate("/")}>
+          Modular
+        </h1>
         {((width <= 991 && showMenu) || width > 991) && (
           <ul className={`nav-list ${showMenu ? "responsive" : ""}`.trim()}>
             <li
               className={`nav-list-item ${width > 991 ? "ml-auto" : ""}`.trim()}
+              onClick={() => navigate("/live")}
             >
               Live
             </li>
