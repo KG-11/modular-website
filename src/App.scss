@@ -352,34 +352,37 @@ section.category-three {
     padding: 4rem;
     flex-wrap: wrap;
   }
+
+  .b {
+    width: 100%;
+    font-size: $font-md;
+    padding: 4rem;
+  }
+
   .category-qa {
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
     justify-content: space-between;
-    gap: 6rem;
     padding-right: 2rem;
+
     .q {
-      width: 30%;
-      padding-left: 4rem;
-      margin-bottom: 4rem;
+      width: 100%;
+      padding-right: 4rem;
+      padding-left: 0rem;
       font-size: $font-sm;
-      font-weight: bold;
+      // font-weight: bold;
       line-height: 40px;
     }
-    .b {
-      width: 30%;
-      font-size: $font-sm;
-      position: relative;
-    }
+
     .a {
-      width: 60%;
+      width: 100%;
       img {
         width: 60%;
         height: 100%;
         position: inherit;
         object-fit: scale-down;
-        left: 6rem;
+        padding-left: 2rem;
         z-index: -1;
       }
 
