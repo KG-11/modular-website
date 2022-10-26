@@ -90,7 +90,7 @@ const Home = () => {
             <p>Back to nature</p>
           </div>
           <div className="category-qa">
-            <p className="q">
+            <div className="q">
               <h2>Find a space to unwind</h2>
               <h4>
                 Ark-Shelter shows the beauty of natural light and allows you to
@@ -105,7 +105,7 @@ const Home = () => {
                 materials, you’ll live with zero-impact. Become as productive as
                 nature itself, and grow and bloom within your own Ark.
               </h4>
-            </p>
+            </div>
 
             <p className="a">
               <img src={Gallery1} alt="360 preview" />
@@ -154,7 +154,7 @@ const Home = () => {
             </h1>
           </div>
           <div className="category-qa">
-            <p className="q">
+            <div className="q">
               <h4>Connect with nature</h4>
               <h4>
                 Ark-Shelter began with one question: how will people live in the
@@ -166,7 +166,7 @@ const Home = () => {
                 come to themselves, reconnect with nature and reconnect with
                 themselves.
               </h4>
-            </p>
+            </div>
 
             <p className="a">
               <img src={Gallery1} alt="360 preview" />
